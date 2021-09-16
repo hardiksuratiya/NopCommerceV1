@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 80.856 sec <<< FAILURE! - in TestSuite
+loginTest(com.NopCommerce.TestCase.TC_LoginTestDDT_002)  Time elapsed: 38.624 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.NopCommerce.TestCase.TC_LoginTestDDT_002.loginTest(TC_LoginTestDDT_002.java:43)
+
+loginTest(com.NopCommerce.TestCase.TC_LoginTestDDT_002)  Time elapsed: 6.759 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.NopCommerce.TestCase.TC_LoginTestDDT_002.loginTest(TC_LoginTestDDT_002.java:43)
+
+loginTest(com.NopCommerce.TestCase.TC_LoginTestDDT_002)  Time elapsed: 7.333 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.NopCommerce.TestCase.TC_LoginTestDDT_002.loginTest(TC_LoginTestDDT_002.java:43)
+
