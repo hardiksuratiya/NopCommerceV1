@@ -29,6 +29,7 @@ public class TC_SearchCustomer_004 extends BaseClass
 		searchcust.clickOnSearchBox("admin@yourStore.com");
 		searchcust.clickonSearchButton();
 		Thread.sleep(3000);
+		searchcust.clickonEditbutton();
 		
 	}	
 }

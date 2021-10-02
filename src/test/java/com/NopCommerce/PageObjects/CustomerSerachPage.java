@@ -32,6 +32,9 @@ public class CustomerSerachPage {
 	@FindBy (id="search-customers")
 	WebElement searchbutton;
 	
+	@FindBy (xpath="//i[@class='fas fa-pencil-alt']")
+	WebElement editbutton;
+	
 	public void clickOnSearchBox(String email)
 	{
 		searchEmailInputBox.sendKeys(email);	
@@ -57,5 +60,9 @@ public class CustomerSerachPage {
 	public void clickonSearchButton()
 	{
 		searchbutton.click();
+	}
+	public void clickonEditbutton()
+	{
+		editbutton.click();
 	}
 }
