@@ -16,8 +16,8 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import com.NopCommerce.Utilities.ReadConfig;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,6 +29,7 @@ public class BaseClass {
 	public String username = readconfig.getUserEmail();
 	public String password = readconfig.getPassword();
 	public static Logger logger;
+	static String path = "/Users/patel/eclipse-workspace/NopCommerceV1/src/test/java/com/NopCommerceTestData/LoginDataCredentials.xlsx";
 	
 	@BeforeClass
 	@Parameters("browser")
@@ -56,7 +57,7 @@ public class BaseClass {
 			driver = new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
-	}
+	} 
 	
 	@AfterClass
 	public void teardown() throws InterruptedException
@@ -73,13 +74,13 @@ public class BaseClass {
 		FileUtils.copyFile(src, tgt);
 		System.out.println("Screenshot taken");
 	}
-	public static String randomstring ()
+	public static String randomstring () throws IOException 
 	{
 		String generatedString1=RandomStringUtils.randomAlphabetic(6);
 		return (generatedString1);
 	}
 	
-	public static String randomNum()
+	public static String randomNum() throws IOException
 	{
 		String generatedString2=RandomStringUtils.randomNumeric(5);
 		return (generatedString2);

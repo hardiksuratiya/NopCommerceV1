@@ -119,7 +119,7 @@ public class AddCustomerPage {
 		btnAddnew.click();
 	}
 	
-	public void setEmail(String email)
+	public void setEmail(String email) 
 	{
 		txtEmail.sendKeys(email);
 	}

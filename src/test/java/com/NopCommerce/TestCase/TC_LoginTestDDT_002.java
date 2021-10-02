@@ -11,8 +11,8 @@ import com.NopCommerce.Utilities.XLUtils;
 
 public class TC_LoginTestDDT_002 extends BaseClass
 {
-	
-	
+		
+	 
 	@Test(dataProvider = "LoginData")
 	public void loginTest(String user, String pwd) throws InterruptedException, IOException
 	{
@@ -28,7 +28,7 @@ public class TC_LoginTestDDT_002 extends BaseClass
 		
 		lp.clicklogin();
 		
-		Thread.sleep(6000);
+		Thread.sleep(6000); 
 		if(driver.getTitle().equals("Dashboard / nopCommerce administration"))
 		{
 			logger.info("login is successful");
@@ -42,7 +42,7 @@ public class TC_LoginTestDDT_002 extends BaseClass
 		//	captureScreen(driver,"logintest");
 			Assert.assertTrue(false);
 			logger.info("Login is failed...");
-		}
+		} 
 	}
 	
 	@DataProvider(name="LoginData")
