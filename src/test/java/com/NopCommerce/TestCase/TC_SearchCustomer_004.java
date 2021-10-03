@@ -26,7 +26,9 @@ public class TC_SearchCustomer_004 extends BaseClass
 		Thread.sleep(2000);
 		
 		CustomerSerachPage searchcust = new CustomerSerachPage(driver);
-		searchcust.clickOnSearchBox("admin@yourStore.com");
+		//searchcust.clickOnSearchBox("admin@yourStore.com");
+		searchcust.EnteredFirstName("John");
+		searchcust.EnteredLastName("Smith");
 		searchcust.clickonSearchButton();
 		Thread.sleep(3000);
 		searchcust.clickonEditbutton();
